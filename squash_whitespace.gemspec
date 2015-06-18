@@ -9,12 +9,12 @@ Gem::Specification.new do |s|
   s.version     = SquashWhitespace::VERSION
   s.authors     = ["ta"]
   s.email       = ["ioiioioloo@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of SquashWhitespace."
-  s.description = "TODO: Description of SquashWhitespace."
+  s.homepage    = "https://github.com/tatat/squash_whitespace"
+  s.summary     = "Remove whitespace between html tags."
+  s.description = "Remove whitespace between html tags."
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.2.2"
