@@ -1,0 +1,61 @@
+<%= squash_whitespace do %>
+  <ul>
+    <li>
+      <p>
+        Item 1<br />
+        New line
+      <p>
+    </li>
+    <li>
+      <p>
+        Item 2<br />
+        New line
+      <p>
+    </li>
+    <li>
+      <p>
+        Item 3<br />
+        New line
+      <p>
+    </li>
+  </ul>
+<% end %>
+
+<%= squash_whitespace strip: true do %>
+  <ul>
+    <li>
+      <p>
+        Item 1<br />
+        New line
+      <p>
+    </li>
+    <li>
+      <p>
+        Item 2<br />
+        New line
+      <p>
+    </li>
+    <li>
+      <p>
+        Item 3<br />
+        New line
+      <p>
+    </li>
+  </ul>
+<% end %>
+
+<%= squash_whitespace do %>
+  <p>
+    Nested
+  </p>
+
+  <%= squash_whitespace do %>
+    <p>
+      Nested
+    </p>
+  <% end %>
+
+  <p>
+    Nested
+  </p>
+<% end %>
